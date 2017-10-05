@@ -20,16 +20,16 @@
  */
 package se.skl.skltpservices.adapter.fk.util;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.regex.Pattern;
-
-import se.inera.ifv.insuranceprocess.healthreporting.qa.v1.LakarutlatandeEnkelType;
-import se.inera.ifv.insuranceprocess.healthreporting.qa.v1.VardAdresseringsType;
+import se.inera.ifv.insuranceprocess.healthreporting.medcertqa.v1.LakarutlatandeEnkelType;
+import se.inera.ifv.insuranceprocess.healthreporting.medcertqa.v1.VardAdresseringsType;
 import se.inera.ifv.insuranceprocess.healthreporting.v2.EnhetType;
 import se.inera.ifv.insuranceprocess.healthreporting.v2.HosPersonalType;
 import se.inera.ifv.insuranceprocess.healthreporting.v2.PatientType;
 import se.inera.ifv.insuranceprocess.healthreporting.v2.VardgivareType;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.regex.Pattern;
 
 public final class ValidatorUtil {
     private static final String PERSON_NUMBER_REGEX = "[0-9]{8}[-+][0-9]{4}";
@@ -98,7 +98,7 @@ public final class ValidatorUtil {
         if (inHoSP.getFullstandigtNamn() == null || inHoSP.getFullstandigtNamn().length() < 1) {
             validationErrors.add("No skapadAvHosPersonal fullstandigtNamn elements found or set!");
         }
-        
+
         // Check that we got a enhet element
         if (inHoSP.getEnhet() == null) {
             validationErrors.add("No enhet element found!");
