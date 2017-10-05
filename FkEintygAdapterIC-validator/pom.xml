@@ -11,25 +11,15 @@
   <parent>
     <groupId>se.skltp.adapterservices.insuranceprocess.healthreporting</groupId>
     <artifactId>ForsakringskassanEintygAdapter</artifactId>
-    <version>2.2-RC2-SNAPSHOT</version>
+    <version>2.2-RC2-INTYG54</version>
   </parent>
 
   <dependencies>
+
     <!-- schema dependency -->
-
     <dependency>
-      <groupId>se.skltp.adapterservices.insuranceprocess.healthreporting</groupId>
+      <groupId>se.riv.insuranceprocess.healthreporting</groupId>
       <artifactId>insuranceprocess-healthreporting-schemas</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>se.skltp.adapterservices.insuranceprocess.healthreporting</groupId>
-      <artifactId>fk-vardgivare-sjukvard-schemas</artifactId>
-    </dependency>
-
-    <!-- itintegration monitoring schemas för PingForConfiguration -->
-    <dependency>
-      <groupId>se.skltp.itintegration.monitoring</groupId>
-      <artifactId>ServiceContracts_itintegration_monitoring</artifactId>
     </dependency>
 
     <dependency>

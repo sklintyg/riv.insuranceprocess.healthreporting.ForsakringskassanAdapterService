@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<mule-configuration xmlns="http://www.mulesoft.com/tooling/messageflow" name="TaEmotFraga-fk-teststub-service">
-    <global-unknown description="false" unknownName="varden-fk-taemotfraga-teststub-service" index="1" entity-id="global-unknown#1">
-        <content>&lt;simple-service xmlns=&quot;http://www.mulesoft.org/schema/mule/core&quot; name=&quot;varden-fk-taemotfraga-teststub-service&quot; address=&quot;${inbound.endpoint.eintyg.taemotfraga.teststub}?connector=soitoolkit-https-connector&quot; component-class=&quot;se.skl.skltpservices.adapter.fk.vardgivare.sjukvard.taemotfraga.TaEmotFragaImpl&quot; type=&quot;jax-ws&quot;/&gt;</content>
-    </global-unknown>
-</mule-configuration>
