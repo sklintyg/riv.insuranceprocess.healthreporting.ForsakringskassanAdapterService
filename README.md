@@ -36,7 +36,7 @@ För säkerhets skull, kopiera filen så du har den i katalogen.
 #### 4. Kör mvn deploy:deploy-file
 
     mvn deploy:deploy-file -DgroupId=se.skltp.adapterservices.insuranceprocess.healthreporting \
-        -DartifactId=ForsakringskassanEintygAdapter \
+        -DartifactId=FkEintygAdapterIC-validator \
         -Dversion=2.2-RC3-INTYG \
         -Dpackaging=jar \
         -Dfile=FkEintygAdapterIC-validator-2.2-RC3-INTYG.jar \
